@@ -1,0 +1,38 @@
+{
+    "name": "cfaner/pptxXmlCompare",
+    "type": "library",
+    "description": "在修改ppt后，经过与历史版本对比，查看修改所对应的XML位置。",
+    "authors": [
+        {
+            "name": "Dingmw",
+            "email": "cfan@dingmw.cn"
+        }
+    ],
+	"repositories": [
+		{
+            "type": "package",
+            "package": {
+                "name": "chrisboulton/php-diff",
+                "version": "1.0",
+                "source": {
+                    "url": "https://github.com/chrisboulton/php-diff.git",
+                    "type": "git",
+                    "reference": "refs/heads/master"
+                },
+                "autoload": {
+					 "psr-0": {
+						"Diff": "lib/"
+					}
+                }
+            }
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            
+        }
+    },
+    "require-dev": {
+		"chrisboulton/php-diff" : "1.0"
+    }
+}
